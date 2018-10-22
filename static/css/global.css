@@ -6,7 +6,7 @@
 #products_example {
 	position:relative;
 }
-/*Slideshow*/
+
 #products .slides_container {
 	width:96.5%;
 	overflow:hidden;
@@ -14,20 +14,14 @@
 	position:relative;
 	display:none;
 }
-/*
-	Each slide
-	Important:
-	Set the width of your slides
-	If height not specified height will be set by the slide content
-	Set to display block
-*/
+
 .slides_container a {
 	width: 248px;
 	height:180px;
 	display:block;
 	margin: 10px;
 }
-/*Next/prev buttons*/
+
 
 #products .next,#products .prev {
 	position:absolute;
@@ -49,7 +43,7 @@
 	background:url(../images/arrow-next.png);
 }
 
-/*****Pagination********/
+
 
 #products .pagination {
 	display: inline-block;

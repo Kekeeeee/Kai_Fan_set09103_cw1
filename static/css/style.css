@@ -1,32 +1,32 @@
 
-/* reset */
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0;padding:0;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
-/* start editing from here */
+
 a{text-decoration:none;}
-.txt-rt{text-align:right;}/* text align right */
-.txt-lt{text-align:left;}/* text align left */
-.txt-center{text-align:center;}/* text align center */
-.float-rt{float:right;}/* float right */
-.float-lt{float:left;}/* float left */
-.clear{clear:both;}/* clear float */
-.pos-relative{position:relative;}/* Position Relative */
-.pos-absolute{position:absolute;}/* Position Absolute */
-.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
-.vertical-top{	vertical-align:top;}/* vertical align top */
+.txt-rt{text-align:right;}
+.txt-lt{text-align:left;}
+.txt-center{text-align:center;}
+.float-rt{float:right;}
+.float-lt{float:left;}
+.clear{clear:both;}
+.pos-relative{position:relative;}
+.pos-absolute{position:absolute;}
+.vertical-base{	vertical-align:baseline;}
+.vertical-top{	vertical-align:top;}
 .underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
-nav.vertical ul li{	display:block;}/* vertical menu */
-nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+nav.vertical ul li{	display:block;}
+nav.horizontal ul li{	display: inline-block;}
 img{max-width:100%;}
-/*end reset*/
+
 body {
 	font-family: Arial, Geneva,Helvetica, sans-serif;
 	font-size: 100%;
-	background: #2d2d2d; /* Old browsers */
+	background: #2d2d2d;
 	background: -moz-radial-gradient(center, ellipse cover,  #2d2d2d 8%, #0c0c0c 58%, #0b0b0b 80%, #0a0a0a 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(8%,#2d2d2d), color-stop(58%,#0c0c0c), color-stop(80%,#0b0b0b), color-stop(100%,#0a0a0a)); /* Chrome,Safari4+ */
 	background: -webkit-radial-gradient(center, ellipse cover,  #2d2d2d 8%,#0c0c0c 58%,#0b0b0b 80%,#0a0a0a 100%); /* Chrome10+,Safari5.1+ */
@@ -70,7 +70,7 @@ body {
 	background: #444;
 	cursor: pointer;
 }
-/**** Header Top Right ****/
+
 .header_top_right{
 	margin-top: 6%;
 	float: right;
@@ -131,7 +131,7 @@ body {
 	background: linear-gradient(to bottom, #585858 0%,#313131 1%,#2d2d2d 20%,#232323 70%,#1f1f1f 99%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585858', endColorstr='#1f1f1f',GradientType=0 );
 }
-/*** Login ***/
+{}
 .register_account h3,.login_panel h3{
 	font-size: 22px;
 	color: #6C6C6C;
@@ -223,9 +223,9 @@ p.note{
     -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;  
     cursor:pointer;   
 }
-/** End Login ***/
-/*h_main*/
-.h_main{
+{}
+{}
+.h_main{}
 	margin-top: 3%;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -275,7 +275,7 @@ p.note{
 	-moz-box-shadow: inset 0 0px 0 #292929,inset 0 0 30px #292929;
 	-o-box-shadow:  inset 0 0px 0 #292929,inset 0 0 30px #292929;	
 }
-/*search*/
+
 .search{
 	width:20%;
 	float: right;
@@ -299,7 +299,7 @@ p.note{
 	border: none;
 	cursor: pointer;
 }
-/*--Slider--*/
+
 .container {
 	margin-top:3%;
 }
@@ -368,14 +368,14 @@ p.note{
 	left: 50%;
 	margin-left: -29px;
 }
-/*end slider*/
-/*main*/
+
+
 .main{
 	margin: 3% 6%;
 	background: #161515;
 	border-radius: 5px;
 }
-/*  GRID OF Four  */
+
 .grid_1_of_4{
 	display: block;
 	float:left;
@@ -416,7 +416,7 @@ p.note{
 .btm{
 	padding-bottom: 2%;
 }
-/*footer*/
+
 .footer{
 	margin: 3% 6%;	
 }
@@ -496,7 +496,7 @@ p.note{
 .social-icons li.icon1:hover {
 	background:url(../images/icon1.png) no-repeat 0px  0px;
 }
-/*maintains*/
+
 .main1{
 	padding:3%;
 }
@@ -587,7 +587,7 @@ h2.hdr_s{
 	background: linear-gradient(to bottom, #363636 0%,#272727 1%,#272727 20%,#242323 70%,#222020 99%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585858', endColorstr='#1f1f1f',GradientType=0 );
 }
-/*repairs*/
+
 .repair {
 	margin-top:3%;
 	display: inline-block;
@@ -734,7 +734,7 @@ h2.hdr_s{
 x:-o-prefocus, .lb-overlay img {
     height: 100%;
 }
-/*contact*/
+
 form{
 	margin-top: 2%;
 }
@@ -856,8 +856,7 @@ form{
 .map{
 	margin-top: 6%;
 }
-/*details*/
-/*  Preview  ============================================================================= */
+
 .back-links {
 	float: left;
 	padding-top: 5px;
@@ -1066,7 +1065,7 @@ form{
 	color: #969696;
 	line-height: 1.8em;
 }
-/**** Review *****/
+
 .review h4,.review h4 a{
 	 font-size:1.2em;
 	 color: #777;
@@ -1221,31 +1220,31 @@ form{
 	color: #666;
 	font-family: Arial, Helvetica, sans-serif;
 }
-/**** End Preview Page ******/
-/*details page slider*/
+
+
 #mcts1 
 {
     width:100%;
     height:250px;
     margin: 0 auto;
-    /* Do not alter the below settings */
+    
     white-space:nowrap;
     position:relative;
     font-size:0px;
 }
 #mcts1>* {display:none;}
   
-/*-------- div.item is each thumbnail's wrapper created by the javascript ------*/
+
 #mcts1 div.item{
     padding:12px;
-    margin-right:6px; /* this specifies the distance between each thumbnail */
+    margin-right:6px;
     text-align:center;
     position:relative;
 }
 #mcts1 img{
     border:none;
 }
-/*---------built-in navigation buttons-------*/
+
 #mcts1 .navPrev, #mcts1 .navNext, #mcts1 .navPlay, #mcts1 .navPause{
     width:16px; height:22px; position:absolute;  
     background:url(navButtons.png); 
@@ -1288,7 +1287,7 @@ form{
 	color: #969696;
 	font-family: 'Anaheim', sans-serif;
 }
-/*404*/
+
 .page{
 	padding:10% 0;
 	text-align:center;
@@ -1297,10 +1296,10 @@ form{
 	font-size: 12em;
 	color:#888888;
 }
-/* Demo 4 */
+
 
 .form-4 {
-    /* Size and position */
+   
     width: 26%;
     margin: 60px auto 30px;
     padding: 10px;
@@ -1318,12 +1317,12 @@ form{
 }
 .form-4 input[type=text],
 .form-4 input[type=password] {
-    /* Size and position */
+    
     width: 100%;
     padding: 8px 4px 8px 10px;
     margin-bottom: 15px;
 
-    /* Styles */
+    
 	border: 1px solid rgba(63, 63, 63, 0.47);
 	background: #C9C9C9;
     -webkit-transition: all 0.3s ease-out;
@@ -1332,12 +1331,10 @@ form{
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 
-    /* Font styles */
+    
     color: #fff;
     font-size: 13px;
 }
-
-/* Placeholder style (from http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css) */
 
 .form-4 input::-webkit-input-placeholder {
     color: rgba(37,21,26,0.5);
@@ -1368,7 +1365,7 @@ form{
 .form-4 p{
 	color:#ffffff;
 }
-/* Fallback */
+
 .no-boxshadow .form-4 input[type=text]:focus,
 .no-boxshadow .form-4 input[type=password]:focus {
     outline: 1px solid white;
@@ -1402,7 +1399,7 @@ form{
 	-moz-border-radius: 3px;
 	-o-border-radius: 3px;
 }
-/* Fallback */
+
 .no-boxshadow .form-4 input[type=submit]:hover {
 	background: #535353;
 	background: -moz-linear-gradient(top, #585858 0%, #313131 1%, #2d2d2d 20%, #232323 70%, #1f1f1f 99%);
@@ -1427,7 +1424,7 @@ form{
 .no-placeholder .form-4 label {
     display: block;
 }
-/***** Media Quries *****/
+
 @media only screen and (max-width: 1280px) {
 	.wrap{
 		width:95%;

@@ -1,18 +1,7 @@
-/**
- * jquery.gallery.js
- * http://www.codrops.com
- *
- * Copyright 2011, Pedro Botelho / Codrops
- * Free to use under the MIT license.
- *
- * Date: Mon Jan 30 2012
- */
 
 (function( $, undefined ) {
 	
-	/*
-	 * Gallery object.
-	 */
+	
 	$.Gallery 				= function( options, element ) {
 	
 		this.$el	= $( element );
@@ -21,9 +10,9 @@
 	};
 	
 	$.Gallery.defaults 		= {
-		current		: 0,	// index of current item
-		autoplay	: false,// slideshow on / off
-		interval	: 2000  // time between transitions
+		current		: 0,	
+		autoplay	: false,
+		interval	: 2000  
     };
 	
 	$.Gallery.prototype 	= {
@@ -31,7 +20,7 @@
 			
 			this.options 		= $.extend( true, {}, $.Gallery.defaults, options );
 			
-			// support for 3d / 2d transforms and transitions
+			
 			this.support3d		= Modernizr.csstransforms3d;
 			this.support2d		= Modernizr.csstransforms;
 			this.supportTrans	= Modernizr.csstransitions;
@@ -45,7 +34,7 @@
 			this.$navPrev		= this.$nav.find('.dg-prev');
 			this.$navNext		= this.$nav.find('.dg-next');
 			
-			// minimum of 3 items
+			
 			if( this.itemsCount < 3 ) {
 					
 				this.$nav.remove();
@@ -66,10 +55,10 @@
 			
 			this._layout();
 			
-			// load the events
+			
 			this._loadEvents();
 			
-			// slideshow
+			
 			if( this.options.autoplay ) {
 			
 				this._startSlideshow();
@@ -88,11 +77,10 @@
 		},
 		_layout				: function() {
 			
-			// current, left and right items
+			
 			this._setItems();
 			
-			// current item is not changed
-			// left and right one are rotated and translated
+			
 			var leftCSS, rightCSS, currentCSS;
 			
 			if( this.support3d && this.supportTrans ) {
@@ -172,14 +160,14 @@
 			
 			}
 			
-			// next & previous items
+			
 			if( this.itemsCount > 3 ) {
 			
-				// next item
+				
 				this.$nextItm		= ( this.$rightItm.index() === this.itemsCount - 1 ) ? this.$items.eq( 0 ) : this.$rightItm.next();
 				this.$nextItm.css( this._getCoordinates('outright') );
 				
-				// previous item
+				
 				this.$prevItm		= ( this.$leftItm.index() === 0 ) ? this.$items.eq( this.itemsCount - 1 ) : this.$leftItm.prev();
 				this.$prevItm.css( this._getCoordinates('outleft') );
 			
@@ -387,16 +375,16 @@
 					
 					this.current	= this.$rightItm.index();
 					
-					// current item moves left
+					
 					this.$currentItm.addClass('dg-transition').css( this._getCoordinates('left') );
 					
-					// right item moves to the center
+					
 					this.$rightItm.addClass('dg-transition').css( this._getCoordinates('center') );	
 					
-					// next item moves to the right
+					
 					if( this.$nextItm ) {
 						
-						// left item moves out
+						
 						this.$leftItm.addClass('dg-transition').css( this._getCoordinates('outleft') );
 						
 						this.$nextItm.addClass('dg-transition').css( this._getCoordinates('right') );
@@ -404,7 +392,7 @@
 					}
 					else {
 					
-						// left item moves right
+						
 						this.$leftItm.addClass('dg-transition').css( this._getCoordinates('right') );
 					
 					}
@@ -414,16 +402,16 @@
 				
 					this.current	= this.$leftItm.index();
 					
-					// current item moves right
+					
 					this.$currentItm.addClass('dg-transition').css( this._getCoordinates('right') );
 					
-					// left item moves to the center
+					
 					this.$leftItm.addClass('dg-transition').css( this._getCoordinates('center') );
 					
-					// prev item moves to the left
+					
 					if( this.$prevItm ) {
 						
-						// right item moves out
+						
 						this.$rightItm.addClass('dg-transition').css( this._getCoordinates('outright') );
 					
 						this.$prevItm.addClass('dg-transition').css( this._getCoordinates('left') );
@@ -431,7 +419,7 @@
 					}
 					else {
 					
-						// right item moves left
+						
 						this.$rightItm.addClass('dg-transition').css( this._getCoordinates('left') );
 					
 					}
